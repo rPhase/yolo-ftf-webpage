@@ -46,7 +46,7 @@ body {
   width: 130px;
   height: 28px;
   border-radius: 15px;
-  background-image: url('search.png');
+  background-image: url('./Assets/search.png');
   background-size: 25px;
   background-position: 5px 0px;
   background-repeat: no-repeat;
