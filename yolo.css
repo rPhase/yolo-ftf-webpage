@@ -1,0 +1,210 @@
+/*Colors:
+Navbar: 87b14e
+searchbox: d7e3c3
+Background: f9f0d7
+font: 5d491c
+donate button: 386030
+footer: 386030*/
+
+/*redefine strong to bold text*/
+strong{
+ font-weight:bold;
+}
+
+body {
+  background-color: #f9f0d7;
+  /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #5d491c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+#menuIcon {
+  width: 45px;
+  margin-right: 20px;
+  display: none;
+}
+
+#logo {
+  max-width: 300px;
+  min-width: 160px;
+  margin-left: 35px;
+  width: 40%;
+}
+
+/*Search box*/
+#search {
+  width: 130px;
+  height: 28px;
+  border-radius: 15px;
+  background-image: url('search.png');
+  background-size: 25px;
+  background-position: 5px 0px;
+  background-repeat: no-repeat;
+  background-color: #d7e3c3;
+  border: 1px;
+  padding-left: 30px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+
+/*Flex Navigation bar*/
+nav{
+  background-color: #87b14e;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*Navbar buttons*/
+button.nav-button {
+  text-transform: uppercase;
+  font-size: large;
+  border: 1px;
+  height: 50px;
+  max-width: 145px;
+  width: 100%;
+  background-color: transparent;
+  color: #5d491c;
+}
+
+/*Background color of the current active button*/
+button#active {
+  background-color: #f9f0d7;
+}
+
+
+/*Change color of button on mouseover not including active*/
+button.nav-button:hover:not(#active) {
+    background-color: #386030;
+    color: white;
+}
+
+#mobile-bar{
+  color: white;
+  font-size: x-large;
+  padding: 20px;
+  display: none;
+}
+
+div#aroundMain {
+  padding: 50px 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission {
+  font-size: 170%;
+}
+
+h1 {
+  font-size: 270%;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-family: "Rage", cursive;
+  color: #8a7b5a !important;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+button.main-button, .mobile-shop{
+  background-color: #386030;
+  font-size: 100%;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  border: 1px;
+}
+
+#donate-box{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+#shop-box{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#aroundSeeds{
+  display: flex;
+  padding-top: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.seeds {
+  max-width: 200px;
+  min-width: 125px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.seeds-box {
+  font-size: large;
+  font-weight:bold;
+  text-align: center;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+button.mobile-shop{
+  font-size: 110%;
+  height: 40px;
+  width: 110px;
+  border-radius: 20px;
+}
+
+#mobile-button{
+  text-align: center;
+  display: none;
+}
+
+main {
+  flex-grow: 0;
+}
+
+footer {
+  font-size: large;
+  color: white;
+  text-align: center;
+  background-color: #386030;
+  padding: 40px;
+}
+
+@media (max-width: 480px) {
+  #menuIcon, #mobile-bar, #mobile-button{
+    display: block;
+  }
+  #desktop-box{
+    display: none;
+  }
+  .nav-button, #search{
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+  #aroundMain{
+    padding-top: 15px !important;
+  }
+}
